@@ -1,14 +1,14 @@
-if SHIELD_REEEDOX_LEFT
+if SHIELD_HOTPAW_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Reeedox"
+    default "Hotpaw"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_REEEDOX_LEFT || SHIELD_REEEDOX_RIGHT
+if SHIELD_HOTPAW_LEFT || SHIELD_HOTPAW_RIGHT
 
 config ZMK_SPLIT
     default y

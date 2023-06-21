@@ -1,11 +1,11 @@
 file_format: "1"
-id: reeedox
-name: Reeedox
+id: hotpaw
+name: Hotpaw
 type: shield
 url: https://juliaebert.com
 requires: [nice_nano]
 features:
   - keys
 siblings:
-  - reeedox_left
-  - reeedox_right
+  - hotpaw_left
+  - hotpaw_right

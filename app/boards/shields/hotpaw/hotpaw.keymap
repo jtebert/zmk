@@ -33,7 +33,7 @@
 
         function_layer {
 // ┌────┬────┬────┬────┬────┬────┐                          ┌────┬────┬────┬────┬────┬────┐
-// │BOOT│    │    │    │    │    │                          │    │    │    │    │    │BOOT│
+// │BOOT│ F1 │ F2 │ F3 │ F4 │ F5 │                          │ F6 │ F7 │ F8 │ F9 │ F10│BOOT│
 // ├────┼────┼────┼────┼────┼────┤                          ├────┼────┼────┼────┼────┼────┤
 // │    │    │    │    │    │    │                          │    │    │  ü │    │    │    │
 // ├────┼────┼────┼────┼────┼────┼────┐                ┌────┼────┼────┼────┼────┼────┼────┤
@@ -43,15 +43,15 @@
 // ├────┼────┼────┼────┼────┼────┴────┘                └────┴────┼────┼────┼────┼────┼────┤
 // │BtCl│OutB│OutU│    │    │ ┌────┬────┬────┐  ┌────┬────┬────┐ │  ← │  ↓ │  ↑ │  → │    │
 // └────┴────┴────┴────┴────┘ │    │    │    │  │    │    │    │ └────┴────┴────┴────┴────┘
-//                            │    │    ├────┤  ├────┤    │    │
+//                            │    │    ├────┤  ├────┤    │PLAY│
 //                            │    │    │    │  │    │    │    │
 //                            └────┴────┴────┘  └────┴────┴────┘
             bindings = <
-    &trans     &trans       &trans       &trans    &trans    &trans                                            &trans    &trans    &trans    &trans    &trans    &trans
-    &trans     &trans       &trans       &trans    &trans    &trans                                            &trans    &trans    &trans    &trans    &trans    &trans
-    &trans     &trans       &trans       &trans    &trans    &trans    &trans                        &trans    &trans    &trans    &trans    &trans    &trans    &trans
-    &trans     &trans       &trans       &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-    &bt BT_CLR &out OUT_BLE &out OUT_USB &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+    &bootloader &kp F1       &kp F2       &kp F3    &kp F4    &kp F5                                            &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   &bootloader
+    &trans      &trans       &trans       &trans    &trans    &trans                                            &trans    &trans    &trans    &trans    &trans    &trans
+    &trans      &trans       &trans       &trans    &trans    &trans    &trans                        &trans    &trans    &trans    &trans    &trans    &trans    &trans
+    &trans      &trans       &trans       &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+    &bt BT_CLR  &out OUT_BLE &out OUT_USB &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp C_PP  &trans    &trans    &trans    &trans    &trans
             >;
 
         };
