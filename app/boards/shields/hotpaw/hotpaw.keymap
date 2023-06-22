@@ -25,8 +25,8 @@
             bindings = <
     &kp ESC    &kp N1    &kp N2     &kp N3    &kp N4    &kp N5                                                  &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp BSLH
     &kp TAB    &kp Q     &kp W      &kp F     &kp P     &kp G                                                   &kp J      &kp L     &kp U     &kp Y     &kp SEMI  &kp LBKT
-    &kp MINUS  &kp A     &kp R      &kp S     &kp T     &kp D      &bt BT_CLR                         &kp LPAR  &kp H      &kp N     &kp E     &kp I     &kp O     &kp SQT
-    &kp DEL    &kp Z     &kp X      &kp C     &kp V     &kp B      &out OUT_BLE  &kp HOME   &kp PGUP  &kp RPAR  &kp K      &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RBKT
+    &kp MINUS  &kp A     &kp R      &kp S     &kp T     &kp D      &kp EQUAL                          &kp LPAR  &kp H      &kp N     &kp E     &kp I     &kp O     &kp SQT
+    &kp DEL    &kp Z     &kp X      &kp C     &kp V     &kp B      &mo 1         &kp HOME   &kp PGUP  &kp RPAR  &kp K      &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RBKT
     &kp LCTRL  &kp LALT  &kp GRAVE  &kp BSLH  &kp LGUI  &kp LSHFT  &kp BSPC      &kp END    &kp PGDN  &kp RET   &kp SPACE  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp CAPS
             >;
         };
@@ -43,7 +43,7 @@
 // ├────┼────┼────┼────┼────┼────┴────┘                └────┴────┼────┼────┼────┼────┼────┤
 // │BtCl│OutB│OutU│    │    │ ┌────┬────┬────┐  ┌────┬────┬────┐ │  ← │  ↓ │  ↑ │  → │    │
 // └────┴────┴────┴────┴────┘ │    │    │    │  │    │    │    │ └────┴────┴────┴────┴────┘
-//                            │    │    ├────┤  ├────┤    │PLAY│
+//                            │  X │    ├────┤  ├────┤    │PLAY│
 //                            │    │    │    │  │    │    │    │
 //                            └────┴────┴────┘  └────┴────┴────┘
             bindings = <
@@ -51,7 +51,7 @@
     &trans      &trans       &trans       &trans    &trans    &trans                                            &trans    &trans    &trans    &trans    &trans    &trans
     &trans      &trans       &trans       &trans    &trans    &trans    &trans                        &trans    &trans    &trans    &trans    &trans    &trans    &trans
     &trans      &trans       &trans       &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-    &bt BT_CLR  &out OUT_BLE &out OUT_USB &trans    &trans    &trans    &trans    &trans    &trans    &trans    &kp C_PP  &trans    &trans    &trans    &trans    &trans
+    &bt BT_CLR  &out OUT_BLE &out OUT_USB &trans    &trans    &kp X     &trans    &trans    &trans    &trans    &kp C_PP  &trans    &trans    &trans    &trans    &trans
             >;
 
         };
